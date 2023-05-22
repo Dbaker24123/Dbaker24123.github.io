@@ -1,0 +1,175 @@
+/* Default styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background-image: url("tech.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  text-align: center;
+  color: #fff;
+  image-rendering: smooth;
+}
+
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  color: #003366;
+  margin-top: 0;
+}
+
+section ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-control {
+  padding-bottom: 10px;
+}
+
+.form-control label {
+  width: 100px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 10px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+  header {
+    height: 200px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  footer {
+    padding: 5px;
+  }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 601px) {
+  header {
+    height: 300px;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  nav li {
+    margin-left: 20px;
+  }
+
+  main {
+    padding: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  section {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  footer {
+    padding: 40px;
+  }
+}
